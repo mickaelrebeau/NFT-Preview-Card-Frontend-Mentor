@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    user-select: none;
+}
+
+body {
+    width: 100%;
+    height: auto;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    font-family: 'Outfit', sans-serif;
+    font-size: 62.5%;
+
+    background-color: hsl(217, 54%, 11%);
+}
+
+main {
+    width: 400px;
+    height: auto;
+    padding: 30px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    border-radius: 20px;
+    box-shadow: 30px 30px 8px 10px hsl(215, 50%, 10%);
+    background-color:  hsl(216, 50%, 16%);
+}
+
+.container {
+    position: relative;
+}
+
+.container:hover .icon {
+    opacity: 1;
+    width: 340px;
+    height: 340px;
+    border-radius: 10px;
+    transition: .8s ease;
+    background-color: rgba(0, 255, 247, 0.4);
+    cursor: pointer;
+}
+  
+.container:hover svg {
+    opacity: 1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.ETH {
+    opacity: 1;
+    width: 340px;
+    height: 340px;
+    border-radius: 10px;
+    backface-visibility: hidden;
+}
+
+.icon {
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+
+h1 {
+    margin: 20px 0;
+
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: white;
+}
+
+h1:hover {
+    cursor: pointer;
+    color: hsl(178, 100%, 50%);
+}
+
+p {
+    margin-bottom: 10px;
+
+    font-size: 1.2rem;
+    font-weight: 300;
+    line-height: 28px;
+    color: hsl(215, 51%, 70%);
+}
+
+.prices {
+    margin: 20px 0;
+
+    display: flex;
+    align-items: center;
+}
+
+h2 {
+    margin-right: auto;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #00FFF8;
+}
+
+h3 {
+    font-size: 1.1rem;
+    font-weight: 300;
+    color: #8BACD9;
+}
+
+svg {
+    margin-right: 6px;
+}
+
+.footer {
+    padding-top: 20px;
+
+    display: flex;
+    align-items: center;
+
+    border-top: 1px solid hsl(215, 32%, 27%);
+}
+
+.profile {
+    width: 40px;
+    border: 2px solid white;
+    border-radius: 50%;
+}
+
+h4 {
+    margin-left: 20px;
+    font-size: 1.2rem;
+    font-weight: 300;
+    color: #8BACD9;
+}
+
+.name {
+    color: white;
+}
+
+.name:hover {
+    cursor: pointer;
+    color: hsl(178, 100%, 50%);
+}
+
+@media screen and (max-width: 420px) {
+    main {
+        width: 100%;
+        margin: 0 10px;
+        padding: 22px;
+    }
+
+    .container {
+        width: 100%;
+    }
+
+    .container:hover .icon {
+        width: 100%;
+        height: 100%;
+    }
+
+    .ETH {
+        width: 100%;
+        height: auto;
+    }
+}
